@@ -2,7 +2,6 @@ public ResultSet getUserData(ServletRequest req, Connection con) throws SQLExcep
     // Source of data from HTTP request in servlet
     String accountNumber = req.getParameter("accountNumber");
 
-    // Use of PreparedStatement to prevent SQL injection
     String query = "SELECT * FROM user_data WHERE userid = ?";
     PreparedStatement statement = con.prepareStatement(query);
     statement.setString(1, accountNumber);
