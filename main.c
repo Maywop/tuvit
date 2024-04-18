@@ -10,15 +10,14 @@ int main() {
 
 /*
 int main() {
-    char *fixed_buf;
-    fixed_buf = malloc(20 * sizeof(char)); // Allocate memory for 20 characters
+    char *fixed_buff
+    fixed_buf = malloc(20 * sizeof(char)); 
     if (fixed_buf == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
         return 1;
     }
     snprintf(fixed_buf, 20, "Very long format stringt\n");
-    // Use fixed_buf...
-    free(fixed_buf); // Don't forget to free the allocated memory when done using it
+    free(fixed_buf); 
     return 0;
 }
 */
